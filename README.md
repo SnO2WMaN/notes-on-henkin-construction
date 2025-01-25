@@ -1,30 +1,11 @@
-# My Typst Template
+# Notes on Completeness by Henkin Construction
 
-[![Deploy status](https://github.com/SnO2WMaN/typst-report-template/actions/workflows/deploy.yml/badge.svg)](https://github.com/SnO2WMaN/typst-report-template/actions/workflows/deploy.yml)
+Henkin構成を用いた1階述語論理の完全性定理の証明についてのメモ．
 
-My [Typst](https://typst.app) document template.
+## PDF
 
-## Features
-
-- Build document in **GitHub Actions** and deploy to **GitHub Pages**.
-
-## Example
-
-https://sno2wman.github.io/typst-report-template/main.pdf
-
-## Customize
-
-### Fonts
-
-You can every fonts in [Fontsource](https://fontsource.org) ([Google Fonts](https://fonts.google.com)).
-
-```yaml
-- name: Install "Shippori Mincho B1"
-  uses: SnO2WMaN/install-fontsource-action@v0.0.1
-  with:
-    font-name: Shippori Mincho B1
-```
-
+https://sno2wman.github.io/notes-on-henkin-construction/main.pdf
+　
 ## License
 
 [CC BY 4.0](./LICENSE)
