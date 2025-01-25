@@ -101,6 +101,13 @@
   inset: (left: 12pt, top: 5pt, bottom: 8pt),
 )
 
+#let notation = thmbox(
+  "theorem",
+  "記法",
+  breakable: true,
+  inset: (left: 12pt, top: 5pt, bottom: 8pt),
+)
+
 #let proof = thmproof(
   "proof",
   "証明",
