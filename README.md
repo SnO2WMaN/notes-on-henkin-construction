@@ -9,3 +9,11 @@ https://sno2wman.github.io/notes-on-henkin-construction/main.pdf
 ## License
 
 [CC BY 4.0](./LICENSE)
+
+## Compile
+
+Create `meta.json`
+
+```shell
+gh repo view --json licenseInfo,url > meta.json
+```

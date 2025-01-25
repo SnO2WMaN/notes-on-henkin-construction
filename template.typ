@@ -1,6 +1,13 @@
 #import "@preview/ctheorems:1.1.3": *
 #import "@preview/codelst:2.0.2": sourcecode
 
+#let meta(json) = block[
+  #list(
+    [この文書のリポジトリは#link(json.url)です．誤植や訂正などはIssueから連絡してください．],
+    [この文書は#text(json.licenseInfo.name)でライセンスされています．],
+  )
+]
+
 #let project(
   title: "",
   authors: (),
@@ -17,6 +24,8 @@
   show raw: set text(font: "JuliaMono", size: 7pt)
 
   show: thmrules.with(qed-symbol: [❏])
+
+  show link: set text(font: "JuliaMono", size: 8pt)
 
   align(center)[
     #block(text(1.75em, font: "Shippori Antique B1", title))
@@ -38,7 +47,11 @@
 
   set bibliography(title: "参考文献")
 
+  heading(numbering: none)[メタ情報]
+  meta(json("meta.json"))
+
   outline(title: "目次")
+
 
   body
 
