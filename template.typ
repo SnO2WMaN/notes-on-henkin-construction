@@ -2,6 +2,8 @@
 #import "@preview/codelst:2.0.2": sourcecode
 
 #let meta(json) = block[
+  #show link: underline
+
   #list(
     [この文書のリポジトリは#link(json.url)です．誤植や訂正などはIssuesから連絡してください．],
     [この文書は#text(json.licenseInfo.name)でライセンスされています．],
@@ -24,8 +26,6 @@
   show raw: set text(font: "JuliaMono", size: 7pt)
 
   show: thmrules.with(qed-symbol: [❏])
-
-  show link: underline
 
   align(center)[
     #block(text(1.75em, font: "Shippori Antique B1", title))
@@ -196,3 +196,7 @@
 #let LogicTriv = $Logic("Triv")$
 #let LogicVer = $Logic("Ver")$
 #let LogicGrz = $Logic("Grz")$
+
+#let Lang = $cal(L)$
+
+#let Model(M) = $frak(#M)$
